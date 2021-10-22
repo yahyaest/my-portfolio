@@ -46,13 +46,13 @@ const Header = () => {
       </Sections>
 
       <Icons>
-        <SocialIcons href="https://google.com">
+        <SocialIcons href="https://github.com/yahyaest">
           <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
+        <SocialIcons href="https://www.linkedin.com/in/machat-yahya-0667b2149/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
+        <SocialIcons href="mailto:yahyamachat@gmail.com">
           <AiFillGoogleCircle size="3rem" />
         </SocialIcons>
       </Icons>
