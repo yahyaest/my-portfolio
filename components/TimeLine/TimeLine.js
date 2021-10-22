@@ -9,8 +9,7 @@ import {
 import { TimeLineList } from "../../constant/constants";
 
 const TimeLine = () => {
-
-const [currentIndex,setCurrentIndex] = useState(2)
+  const [currentIndex, setCurrentIndex] = useState(2);
 
   const handleInputClick = (index) => {
     setCurrentIndex(index);
@@ -29,6 +28,7 @@ const [currentIndex,setCurrentIndex] = useState(2)
         <TimeLineContainer>
           {TimeLineList.map((item, index) => (
             <TimeLineInput
+              key={index}
               className={index < currentIndex + 1 ? "active" : ""}
               onClick={() => handleInputClick(index)}
             >
