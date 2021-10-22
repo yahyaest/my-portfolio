@@ -15,8 +15,8 @@ const Technologies = () => {
       <Separator />
       <h1>Technologies</h1>
       <p>
-        I've worked with a range of technologies in the web development world.
-        From Back-end ,Front-end and Databases
+        I&apos;ve worked with a range of technologies in the web development
+        world. From Back-end ,Front-end and Databases
       </p>
       <List>
         <ListItem>

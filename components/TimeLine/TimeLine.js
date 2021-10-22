@@ -21,7 +21,9 @@ const [currentIndex,setCurrentIndex] = useState(2)
       <Separator />
       <h1>About Me</h1>
       <p>
-        I've worked with different language from C/C++ , Python to JavaScript. Each app is built with different framework/library for both Front-end and Back-end.
+        I&apos;ve worked with different language from C/C++ , Python to
+        JavaScript. Each app is built with different framework/library for both
+        Front-end and Back-end.
       </p>
       <TimeLineSection>
         <TimeLineContainer>

@@ -16,9 +16,10 @@ const Hero = () => {
             Welcome To <br /> My Personal Portfolio
           </HeroTitle>
           <HeroText>
-            <strong> Hi, I'm Yahya Machat</strong>, I aspire to became a web
-            developer. I build responsive websites through elegant and efficient
-            code. This portfolio is an exposition to my created web apps.
+            <strong> Hi, I&apos;m Yahya Machat</strong>, I aspire to became a
+            web developer. I build responsive websites through elegant and
+            efficient code. This portfolio is an exposition to my created web
+            apps.
           </HeroText>
 
           <HeroButton href="#about">Learn More</HeroButton>
