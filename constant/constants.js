@@ -29,7 +29,7 @@ export const projects = [
     id: 2,
     title: "Bookstore App",
     description:
-      "Build with two different approaches.The first using Django as Backend, React as frontend and MYSQL as database.And the second using the MERN stack (React, MongoDB, Express & Node) plus Redux as state manger. On top of that, the app contains user authentication using jwt tokens. As user you can create an account, search, filter and sort books. You can also add books to favourites and cart list. Every book info page contains a comment section to discuss and exanchage opinions.",
+      "Build with two different approaches.The first using Django as Backend, React as frontend and MYSQL as database.And the second using the MERN stack (React, MongoDB, Express & Node) plus Redux as state manger. On top of that, the app contains user authentication using jwt tokens. As user you can create an account, search, filter and sort books. You can also add books to favourites and cart list. Every book info page contains a comment section to discuss and exchange opinions.",
     image: "Bookstore_App.png",
     tags: ["MongoDB", "React", "Node", "Redux"],
     tags2: ["MYSQL", "React", "Django", "Redux"],
@@ -50,14 +50,17 @@ export const projects = [
     id: 3,
     title: "Next Anime App",
     description:
-      "Build using NextJS and MongoDB plus React Context as state manger and sass as css precompiler. On top of that, the app contains user authentication using jwt tokens. As user you can create an account,check latest animes news, find anime/manga and add them to your favourite list. Every anime/manga info page contains a comment section to discuss and exanchage opinions. The app offer a chat room section and anime bots section where you can chat with AI anime charters.",
+      "Build using NextJS and MongoDB plus React Context as state manger and sass as css precompiler. On top of that, the app contains user authentication using jwt tokens. As user you can create an account,check latest animes news, find anime/manga and add them to your favourite list. Every anime/manga info page contains a comment section to discuss and exchange opinions. The app offer a chat room section and anime bots section where you can chat with AI anime charters.",
     image: "Next_Anime_App.png",
     tags: ["MongoDB", "NextJS", "Node"],
     source: {
       link: "https://github.com/yahyaest/nextjs-anime-app",
       text: "Code",
     },
-    visit: { link: "https://nextjs-anime-app.vercel.app/", text: "Visit" },
+    visit: {
+      link: "https://nextjs-anime-app-aaaqify4h-yahyaest.vercel.app/",
+      text: "Visit",
+    },
   },
   {
     id: 4,
