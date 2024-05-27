@@ -54,6 +54,7 @@ export const Icons = styled.div`
 `;
 
 export const NavLink = styled.a`
+  color: white;
   transition: 0.4s ease;
   &:hover {
     color: wheat;

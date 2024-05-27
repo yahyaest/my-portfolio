@@ -19,7 +19,7 @@ const Hero = () => {
             <strong>Hi, I&apos;m Yahya Machat</strong>, a passionate full-stack
             developer. I specialize in crafting responsive and scalable web
             applications using elegant and efficient code. This portfolio
-            showcases some of the web apps I've created.
+            showcases some of the web apps I&apos;mve created.
           </HeroText>
 
           <HeroButton href="#about">Learn More</HeroButton>
