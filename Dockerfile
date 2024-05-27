@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as a parent image
-FROM node:14-alpine AS builder
+FROM node:20-alpine AS builder
 
 # Set the working directory to /app
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Use a lighter base image for the final stage
-FROM node:14-alpine
+FROM node:20-alpine
 
 # Set the working directory to /app
 WORKDIR /app
