@@ -118,5 +118,8 @@ export const TimeLineList = [
   { date: "9/20", content: "Django/MYSQL" },
   { date: "12/20", content: "Node/MongoDB" },
   { date: "4/21", content: "TypeScript/Docker" },
-  { date: "7/21", content: "NextJS" },
+  { date: "7/21", content: "NextJS/TailwindCSS" },
+  { date: "5/22", content: "Angular" },
+  { date: "9/22", content: "NestJS/Postgres" },
+  { date: "6/23", content: "Svelte" },
 ];

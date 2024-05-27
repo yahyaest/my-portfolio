@@ -20,9 +20,11 @@ const TimeLine = () => {
       <Separator />
       <h1>About Me</h1>
       <p>
-        I&apos;ve worked with different language from C/C++ , Python to
-        JavaScript. Each app is built with different framework/library for both
-        Front-end and Back-end.
+        I&apos;ve worked with a diverse range of programming languages, from
+        C/C++ and Python to JavaScript, allowing me to develop a broad skill set
+        as a full-stack developer. <br/> Each of my projects is built using different
+        frameworks and libraries for both Front-end and Back-end, enabling me to
+        adapt and utilize the best tools for each task.
       </p>
       <TimeLineSection>
         <TimeLineContainer>

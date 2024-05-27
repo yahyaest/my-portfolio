@@ -6,7 +6,7 @@ import {
   ListItem,
   ListContainer,
 } from "./TechnologiesStyles";
-import { DiCode, DiDatabase, DiReact, DiZend } from "react-icons/di";
+import { DiCode, DiDatabase, DiReact, DiZend, DiAptana } from "react-icons/di";
 import { FaServer } from "react-icons/fa";
 
 const Technologies = () => {
@@ -15,8 +15,11 @@ const Technologies = () => {
       <Separator />
       <h1>Technologies</h1>
       <p>
-        I&apos;ve worked with a range of technologies in the web development
-        world. From Back-end ,Front-end and Databases
+        I&apos;ve worked with a diverse range of technologies across the web
+        development spectrum, spanning both Back-end, Front-end, Databases, and
+        DevOps tools. <br /> My experience encompasses building robust Back-end
+        solutions, crafting engaging Front-end interfaces, optimizing database
+        performance, and orchestrating infrastructure with DevOps tools.
       </p>
       <List>
         <ListItem>
@@ -41,8 +44,9 @@ const Technologies = () => {
             <h2>Front-End</h2>
             <p>
               <em>Experience with :</em> <br />
-              React.js <br />
-              Next.js
+              React/Next.js <br />
+              Angular <br />
+              Svelte
             </p>
           </ListContainer>
         </ListItem>
@@ -55,7 +59,8 @@ const Technologies = () => {
             <p>
               <em>Experience with :</em> <br />
               Node/Express <br />
-              Django <br />
+              Nest.JS <br />
+              Django
             </p>
           </ListContainer>
         </ListItem>
@@ -67,6 +72,7 @@ const Technologies = () => {
             <h2>Database</h2>
             <p>
               <em>Experience with :</em> <br />
+              PostgreSQL <br />
               MySQL <br />
               MongoDB <br />
             </p>
@@ -80,7 +86,24 @@ const Technologies = () => {
             <h2>UI/UX</h2>
             <p>
               <em>Experience with :</em> <br />
-              tools like Bootstrap
+              Bootstrap <br />
+              Material-UI <br />
+              TailwindCSS
+            </p>
+          </ListContainer>
+        </ListItem>
+        <ListItem>
+          <picture>
+            <DiAptana size="4rem" />
+          </picture>
+          <ListContainer>
+            <h2>DevOps Tools</h2>
+            <p>
+              <em>Experience with :</em> <br />
+              Linux <br />
+              Docker <br />
+              Git <br />
+              Nginx
             </p>
           </ListContainer>
         </ListItem>
