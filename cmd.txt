@@ -1,0 +1,59 @@
+# docker-compose up -d --build
+docker-compose up -d portfolio-app
+sudo docker cp portfolio-app:/app/.next/ ./
+docker-compose up -d portfolio-nginx
+
+
+
+### Debugging
+yahya@yahya-debian ~/Projects/my-portfolio (master) $ docker exec -it portfolio-nginx bash
+root@723a5771ff5a:/# curl -I 'http://localhost/_next/image/COVID-19_Tracker.png'
+HTTP/1.1 200 OK
+Server: nginx/1.24.0
+Date: Wed, 29 May 2024 00:15:39 GMT
+Content-Type: image/png
+Content-Length: 151241
+Last-Modified: Mon, 27 May 2024 06:35:27 GMT
+Connection: keep-alive
+ETag: "665429af-24ec9"
+Accept-Ranges: bytes
+
+root@723a5771ff5a:/# curl -I 'http://localhost/_next/image?url=%2FImages%2FCOVID-19_Tracker.png&w=1920&q=75'
+HTTP/1.1 404 Not Found
+Server: nginx/1.24.0
+Date: Wed, 29 May 2024 00:15:46 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+After the right forwarding "rewrite ^/_next/image(\?.*)?$ image\$image_path redirect;"
+root@c171989394a9:/# curl -I 'http://localhost/_next/image?url=%2FImages%2FCOVID-19_Tracker.png&w=1920&q=75'
+HTTP/1.1 302 Moved Temporarily
+Server: nginx/1.24.0
+Date: Wed, 29 May 2024 07:33:58 GMT
+Content-Type: text/html
+Content-Length: 145
+Connection: keep-alive
+Location: image\COVID-19_Tracker.png?url=%2FImages%2FCOVID-19_Tracker.png&w=1920&q=75
+X-Image-Path: COVID-19_Tracker.png
+
+root@1db327bfcf8f:/# curl -LI 'http://localhost/_next/image?url=%2FImages%2FCOVID-19_Tracker.png&w=1920&q=75'
+HTTP/1.1 302 Moved Temporarily
+Server: nginx/1.24.0
+Date: Wed, 29 May 2024 07:40:36 GMT
+Content-Type: text/html
+Content-Length: 145
+Connection: keep-alive
+Location: image/COVID-19_Tracker.png?url=%2FImages%2FCOVID-19_Tracker.png&w=1920&q=75
+X-Image-Path: COVID-19_Tracker.png
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0
+Date: Wed, 29 May 2024 07:40:36 GMT
+Content-Type: image/png
+Content-Length: 151241
+Last-Modified: Mon, 27 May 2024 06:35:27 GMT
+Connection: keep-alive
+ETag: "665429af-24ec9"
+X-Image-Path: COVID-19_Tracker.png
+Accept-Ranges: bytes
